@@ -72,14 +72,28 @@ let quotes = [
 function randomQuote() {
        return quotes[Math.floor(Math.random() * quotes.length)];
    }
-  
-console.log(randomQuote());
+
+// console.log(randomQuote()); //for testing
 
 
 /***
  * `printQuote` function
 ***/
 
+function printQuote() {
+  let ranq = randomQuote();
+  let html = '';
+  html += '<p class="quote">' + ranq.quote + '</p>';
+  html += '<p class="source">' + ranq.source;
+    if (ranq.hasOwnProperty('citation')) {
+      html += '<span class="citation">' + ranq.citation + '</span>';
+    } else if (ranq.hasOwnProperty('year')) {
+      html += '<span class="year">' + ranq.year + '</span>';
+    }
+  html += '</p>'
+  console.log(html);
+  document.getElementById('quote-box').innerHTML = html; 
+}
 
 
 /***
