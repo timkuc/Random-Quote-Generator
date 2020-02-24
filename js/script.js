@@ -91,7 +91,7 @@ function printQuote() {
       html += '<span class="year">' + ranq.year + '</span>';
     }
   html += '</p>'
-  console.log(html);
+  // console.log(html); //for testing
   document.getElementById('quote-box').innerHTML = html; 
 }
 
