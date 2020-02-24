@@ -63,11 +63,17 @@ let quotes = [
 
 ]
 
+// console.log(quotes);  //for testing
 
 /***
  * `getRandomQuote` function
 ***/
 
+function randomQuote() {
+       return quotes[Math.floor(Math.random() * quotes.length)];
+   }
+  
+console.log(randomQuote());
 
 
 /***
