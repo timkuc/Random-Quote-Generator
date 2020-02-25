@@ -110,6 +110,7 @@ function printQuote() {
   // console.log(html); //for testing
   document.getElementById('quote-box').innerHTML = html;
   document.getElementById('bodycolor').style.background = randomRGB();
+  //selects element by bodycolor id and changes its background according to randomRGB function
 }
 
 
@@ -119,4 +120,4 @@ function printQuote() {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
-setInterval(printQuote,10000);
+setInterval(printQuote,10000); //adds 10 sec time interval for printquote function to run
