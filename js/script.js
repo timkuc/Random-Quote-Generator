@@ -119,3 +119,4 @@ function printQuote() {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+setInterval(printQuote,10000);
