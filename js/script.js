@@ -79,6 +79,16 @@ function randomQuote() {
 
 // console.log(randomQuote()); //for testing
 
+// randomRGB function
+
+function randomRGB() {
+  function random255() {
+        return Math.floor(Math.random() * 256);
+      }  
+  let randomcolor = 'rgb(' + random255() + ',' + random255() + ',' + random255() + ')';
+  return randomcolor;
+}
+
 
 /***
  * `printQuote` function
