@@ -94,7 +94,7 @@ function printQuote() {
     } else if (ranq.hasOwnProperty('year')) {
       html += '<span class="year">' + ranq.year + '</span>';
     } else if (ranq.hasOwnProperty('tags')) {
-      html += '<span class="tags">' + ranq.tags + '</span>';
+      html += '<span class="tags">tags: ' + ranq.tags + '</span>';
     }
   html += '</p>'
   // console.log(html); //for testing
