@@ -14,11 +14,13 @@ project 1 - A Random Quote Generator
 let quotes = [
   {
     quote: 'Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.',
-    source: 'Albert Einstein'
+    source: 'Albert Einstein',
+    tags: 'humor,universe'
   },
   {
     quote: 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
-    source: 'Winston Churchill'
+    source: 'Winston Churchill',
+    tags: 'success,failure'
   },
   {
     quote: 'Believe you can and you\'re halfway there.',
@@ -27,7 +29,8 @@ let quotes = [
   },
   {
     quote: 'When you have a dream, you\'ve got to grab it and never let go.',
-    source: 'Carol Burnett'
+    source: 'Carol Burnett',
+    tags: 'inspirational,dream'
   },
   {
     quote: 'I can\'t change the direction of the wind, but I can adjust my sails to always reach my destination.',
@@ -58,7 +61,8 @@ let quotes = [
   },
   {
     quote: 'Live as if you were to die tomorrow. Learn as if you were to live forever.',
-    source: 'Mahatma Gandhi'
+    source: 'Mahatma Gandhi',
+    tags: 'learning,die'
   }
 
 ]
